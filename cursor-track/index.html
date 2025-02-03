@@ -7,7 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <div class="top-bar">
+    <div class="menu">
+      <button id="menu-btn">&#9776;</button>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+      </select>
+    </div>
+    <div class="user-info">
+      <input type="text" id="username" placeholder="Enter your name">
+      <button id="save-btn">Save</button>
+    </div>
+  </div>
+  
   <canvas id="canvas" width="500" height="500"></canvas>
 
   <script src="script.js"></script>
