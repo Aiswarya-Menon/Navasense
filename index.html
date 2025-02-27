@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor Tracking Canvas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="menu">
+      <select id="language-select">
+        <option value="en" selected>English</option>
+        <option value="ma">Malayalam</option>
+        <option value="ch">Characters</option>
+      </select>
+    </div>
+    <div class="user-info">
+      <input type="text" id="username" placeholder="Enter your name">
+      <button id="save-btn">Save</button>
+    </div>
+  </div>
+  
+  <div id="image-container" class="image-container">
+    <p>None selected</p>
+  </div>
+  
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <p>Ctrl+L : Start writing <br> Ctrl+M : Stop and Save <br> Ctrl+N : Clear</p>
+  
+  <!-- Scrollable image list container -->
+  <div id="image-list" class="image-list"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
